@@ -1,0 +1,21 @@
+{
+  "name": "@paleite/lockfile",
+  "version": "1.0.0",
+  "main": "lockfile",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "md5": "^2.2.1",
+    "mz": "^2.7.0"
+  },
+  "scripts": {
+    "precommit": "yarn run build; lint-staged",
+    "eslint": "npx eslint *.mjs",
+    "prettier":
+      "npx prettier-eslint --write *.mjs; npx prettier --write {*.json,.*.json,.*rc}",
+    "build":
+      "npx babel lockfile.mjs --out-file lockfile.js && npx babel lockfile.js --minified --no-comments --source-maps -o lockfile.min.js"
+  }
+}

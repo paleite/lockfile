@@ -1,0 +1,4 @@
+{
+  "*.mjs": ["npx prettier-eslint --write", "git add"],
+  "{*.json,.*.json,.*rc}": ["npx prettier --write", "git add"]
+}
