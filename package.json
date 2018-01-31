@@ -17,5 +17,16 @@
       "npx prettier-eslint --write *.mjs; npx prettier --write {*.json,.*.json,.*rc}",
     "build":
       "npx babel lockfile.mjs --out-file lockfile.js && npx babel lockfile.js --minified --no-comments --source-maps -o lockfile.min.js"
-  }
+  },
+  "description": "Simple utility to lock and unlock lockfiles",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paleite/lockfile.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/paleite/lockfile/issues"
+  },
+  "homepage": "https://github.com/paleite/lockfile#readme"
 }
